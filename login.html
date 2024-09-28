@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In - प्राचीनप्रवेशक</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="#"><img src="logo.jpg" class="logo" alt="" ></a>
+
+        <nav>
+            <ul class="nav">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html#language">LANGUAGE</a></li>
+                <li><a href="index.html#discover">DISCOVER MUSEUMS</a></li>
+                <li><a href="index.html#events">Events</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="index.html#login">LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="left-section"> 
+        </div>
+        <div class="right-section">
+            <div class="login-box">
+                <div class="logo">
+                    <img src="logo.jpg" alt="Logo">
+                </div>
+                <h2>Log In</h2>
+                <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+                
+                
+                <form id="loginForm" action="index.html" method="post" onsubmit="return validateLogin()">
+                    <input type="email" placeholder="email" required>
+                    <input type="password" id="password" placeholder="password" required>
+                    <p class="or">OR</p>
+                    <div class="social-login">
+                        <button class="google"><i class="fab fa-google"></i></button>
+                    </div>
+                    <div class="form-actions">
+                        <
+                        <button type="submit" class="login-btn">Login</button>
+                        <a href="forgetPassword.html" class="forgot-password">Forgot Password?</a>
+                    </div>
+                    <p id="error-message" style="color: red; display: none;">incorrect password</p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; All rights reserved to प्राचीनप्रवेशक.</p>
+            <p><a href="contact.html">Contact Us</a></p>
+            <ul>
+                <li><a href="https://www.instagram.com/prachinpraveshak?igsh=MXc2cTVxeXIxcWNmMQ==" target="blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/prachinpraveshak-347550327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="mailto:prachinpraveshak@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="scripts.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() {
+        const aboutLink = document.getElementById('aboutLink');
+        
+        saboutLink.addEventListener('click', function(e) {
+            e.preventDefault(); 
+            window.location.href = 'aboutus.html';
+          
+        });
+    });
+    </script>
+    <!--<script>
+function validateLogin() {
+    const password = document.getElementById('password').value;
+    const correctPassword = "yourCorrectPassword"; // Replace with actual password check logic
+
+    if (password !== correctPassword) {
+        document.getElementById('error-message').style.display = 'block';
+        return false; // Prevent form submission
+    }
+    return true; // Allow form submission
+}
+</script>-->
+</body>
+</html>
