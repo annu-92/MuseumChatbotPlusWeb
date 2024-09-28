@@ -266,7 +266,7 @@ header {
     transform: scale(1.1);
 }
 
-/Login Section/
+/*Login Section*/
 
 .container {
     display: flex;
@@ -313,6 +313,7 @@ header {
     justify-content: center;
     align-items: center;
     background-color: #6d6767;
+    height: 79vh;
 }
 
 .login-box {
@@ -420,7 +421,7 @@ form input {
     justify-content: center;
     align-items: center;
     background-color: #6d6767;
-    height: 100vh;
+    height: 79vh;
 }
 form input {
     width: 100%;
@@ -461,27 +462,6 @@ form input {
    
 }
 
-.aboutus-section {
-    /*background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    min-height: 100vh;
-    color: #000;*/
-    padding: 30px 0;
-    position: relative;
-    display: flex;
-}
-
-.aboutus-section::before{
-    content: '';
-    top: 20px;
-    left: 20px;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 1;
-}
-
 .aboutus-section p {
     text-align: right;
     font-size: 1em;
@@ -512,4 +492,75 @@ footer ul li {
 footer ul li a {
     color: #fff;
     text-decoration: none;
+}
+/*ContactUs Section*/
+
+.container {
+    display: flex;
+    height: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.left-section {
+    width: 50%; /* Adjust width as needed */
+    display: flex;
+    
+}
+
+.left-image {
+    width: 100%; /* Ensure the image is responsive */
+    height: 100%; /* Maintain aspect ratio */
+    
+}
+
+.contact-box {
+    background-color: #fff;
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+}
+
+.contact-box h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6d6767;
+    height: 100vh;
+}
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.submit-btn {
+    background-color: #04AA6D;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #059862;
 }

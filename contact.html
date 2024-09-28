@@ -22,27 +22,21 @@
         </nav>
     </header>
             <div class="container">
-                <div class="left-section"> 
+                <div class="left-section">
+                    <img src="left.jpg" alt="Description of Image" class="left-image"> 
                 </div>
             
                 <div class="right-section">
                 <div class="contact-box">
                 <h2>Contact Us</h2>
-                <p>If you have any questions or need assistance, feel free to reach out to us using the form below. We are here to help!</p>
-
-                <div class="social-login">
-                    <button class="google"><i class="fab fa-google"></i></button>
-                    <!-- Add more social login options if needed -->
-                </div>
-                <p class="or">OR</p>
-                <form id="loginForm" action="index.html" method="post" onsubmit="return validateLogin()">
+                <p>If you have any questions or need assistance, feel free to reach out to us using the form below. We'll reach out to you soon.</p>
+                <form id="contactus" action="index.html" method="post" onsubmit="return validateLogin()">
+                    <input type="username" placeholder="username" required>
                     <input type="email" placeholder="email" required>
-                    <input type="password" id="password" placeholder="password" required>
-                    <div class="form-actions">
-                        <a href="#" class="forgot-password">Forgot Password?</a>
-                        <button type="submit" class="login-btn">Login</button>
-                    </div>
-                    <p id="error-message" style="color: red; display: none;">incorrect password</p>
+                    <input type="message" id="message" placeholder="message" required>
+                    <input type="suggestion" id="suggestion" placeholder="suggestion" required>
+                    <button type="submit" class="contactus-btn">Send</button>
+                    
                 </form>
             </div>
         </div>
