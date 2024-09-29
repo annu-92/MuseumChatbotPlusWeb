@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <a href="#"><img src="logo.jpg" class="logo" alt="" ></a>
+        <a href="#"><img src="logo.jpg" class="logo" alt="Logo"></a>
 
         <nav>
             <ul class="nav">
@@ -21,7 +21,7 @@
             </ul>
         </nav>
     </header>
-
+   <div id="signUpMessage" class = "messageDiv" style="display:none;"></div>
     <div class="container">
         <div class="left-section"> 
         </div>
@@ -32,21 +32,20 @@
                 </div>
                 <h2>Log In</h2>
                 <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
-                
-                
-                <form id="loginForm" action="index.html" method="post" onsubmit="return validateLogin()">
-                    <input type="email" placeholder="email" required>
+                <div id="signUpMessage" class = "messageDiv" style="display:none;"></div>
+                <!-- Login form -->
+                <form id="loginForm">
+                    <input type="email" id="email" placeholder="email" required>
                     <input type="password" id="password" placeholder="password" required>
                     <p class="or">OR</p>
                     <div class="social-login">
-                        <button class="google"><i class="fab fa-google"></i></button>
+                        <button class="google" id="googleLogin"><i class="fab fa-google"></i></button>
                     </div>
                     <div class="form-actions">
-                        <
                         <button type="submit" class="login-btn">Login</button>
                         <a href="forgetPassword.html" class="forgot-password">Forgot Password?</a>
                     </div>
-                    <p id="error-message" style="color: red; display: none;">incorrect password</p>
+                    <p id="error-message" style="color: red; display: none;">Incorrect email or password</p>
                 </form>
             </div>
         </div>
@@ -64,28 +63,32 @@
     </footer>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="scripts.js"></script>
-    <script>document.addEventListener('DOMContentLoaded', function() {
-        const aboutLink = document.getElementById('aboutLink');
-        
-        saboutLink.addEventListener('click', function(e) {
-            e.preventDefault(); 
-            window.location.href = 'aboutus.html';
-          
-        });
-    });
-    </script>
-    <!--<script>
-function validateLogin() {
-    const password = document.getElementById('password').value;
-    const correctPassword = "yourCorrectPassword"; // Replace with actual password check logic
+    
+    <!-- Firebase Authentication Script -->
+    <script type="module" src="firebaseAuth.js"></script>
+    <script type="module">
+      import { loginUser } from './firebase.js';
 
-    if (password !== correctPassword) {
-        document.getElementById('error-message').style.display = 'block';
-        return false; // Prevent form submission
-    }
-    return true; // Allow form submission
-}
-</script>-->
+      const loginForm = document.getElementById('loginForm');
+      loginForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+
+        // Use the function from firebase.js to log in the user
+        loginUser(email, password)
+          .then((userCredential) => {
+            // Successful login
+            const user = userCredential.user;
+            window.location.href = 'index.html'; // Redirect after login
+          })
+          .catch((error) => {
+            // Handle login errors
+            document.getElementById('error-message').style.display = 'block';
+          });
+      });
+    </script>
 </body>
 </html>
+
