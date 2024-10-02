@@ -28,22 +28,20 @@
         <div class="right-section">
             <div class="login-box">
                 <div class="logo">
-                    <img src="logo.jpg" alt="Logo">
+                    <img src="logo2.jpg" alt="Logo">
                 </div>
                 <h2>Log In</h2>
                 <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
-                
-                
                 <form id="loginForm" action="index.html" method="post" onsubmit="return validateLogin()">
                     <input type="email" placeholder="email" required>
                     <input type="password" id="password" placeholder="password" required>
-                    <p class="or">OR</p>
-                    <div class="social-login">
-                        <button class="google-btn"><i class="fab fa-google"></i>Login with Google</button>
-                    </div>
+                    
                     <div class="form-actions">
-                        <
                         <button type="submit" class="login-btn">Login</button>
+                        <p class="or">OR</p>
+                        <div class="social-login">
+                            <button class="google-btn"><i class="fab fa-google"></i>Login with Google</button><br>
+                        </div>
                         <a href="forgetPassword.html" class="forgot-password">Forgot Password?</a>
                     </div>
                     <p id="error-message" style="color: red; display: none;">incorrect password</p>

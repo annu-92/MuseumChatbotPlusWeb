@@ -300,6 +300,7 @@ header {
     flex: 0 0 400px;
     justify-content: center;
     height: 90vh;
+    padding-right: 0;
 }
 
 .login-box {
@@ -307,13 +308,14 @@ header {
     flex-direction: column; 
     align-items: center; 
     text-align: center;
-    background-color: #fff;
-    padding: 20px;
-    width: 100%;
+    background-color:#c1886a;
+    padding: 40px;
+    width: 139%;
     height: 100%;
     color: #000;
     top: 50%;
     left: 50%;
+    margin-right: 0;
 }
 
 .logo img {
@@ -322,7 +324,7 @@ header {
 }
 
 .login-box h2 {
-    margin-top: 0;
+    margin-top: 10px;
     margin-bottom: 20px;
     color: #333;
 }
@@ -332,7 +334,7 @@ form input {
     padding: 10px;
     margin-top: 10px 0;
     margin-bottom: 15px;
-    border: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
 }
 
 .form-actions {
@@ -376,7 +378,7 @@ form input {
 }
 
 .login-btn:hover {
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 .forgot-password {
@@ -417,6 +419,7 @@ form input {
     flex: 0 0 400px;
     justify-content: center;
     height: 90vh;
+    padding-right: 0;
 }
 
 .forgotPassword-box {
@@ -424,13 +427,14 @@ form input {
     flex-direction: column; 
     align-items: center; 
     text-align: center;
-    background-color: #fff;
+    background-color: #c1886a;
     padding: 20px;
-    width: 100%;
+    width: 139%;
     height: 100%;
     color: #000;
     top: 50%;
     left: 50%;
+    margin-right: 0;
 }
 
 .logo img {
@@ -505,6 +509,7 @@ form input {
     flex: 0 0 400px;
     justify-content: center;
     height: 90vh;
+    padding-right:0;
 }
 
 .signup-box {
@@ -512,13 +517,14 @@ form input {
     flex-direction: column; 
     align-items: center; 
     text-align: center;
-    background-color: #fff;
+    background-color: #c1886a;
     padding: 20px;
-    width: 100%;
+    width: 139%;
     height: 100%;
     color: #000;
     top: 50%;
     left: 50%;
+    margin-right: 0%;
 }
 
 .logo img {
@@ -534,7 +540,7 @@ form input {
 form input {
     width: 100%;
     padding: 10px;
-    margin-top: 15px;
+    margin-top: 10px 0;
     margin-bottom: 15px;
     border: 2px solid #ddd;
 }
@@ -554,7 +560,7 @@ form input {
 }
 
 .signup-btn:hover {
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 /* ------About Us------- */
@@ -633,6 +639,7 @@ footer ul li a {
     flex: 0 0 400px;
     justify-content: center;
     height: 90vh;
+    padding-right: 0;
 }
 
 .contact-box {
@@ -640,13 +647,14 @@ footer ul li a {
     flex-direction: column; 
     align-items: center; 
     text-align: center;
-    background-color: #fff;
+    background-color: #c1886a;
     padding: 20px;
-    width: 100%;
+    width: 139%;
     height: 100%;
     color: #000;
     top: 50%;
-    left: 50%;   
+    left: 50%; 
+    margin-right: 0;  
 }
 
 .logo img {
@@ -683,5 +691,5 @@ form input {
 }
 
 .contactus-btn:hover {
-    opacity: 0.9;
+    opacity: 0.8;
 }
