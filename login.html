@@ -21,10 +21,11 @@
             </ul>
         </nav>
     </header>
-   <div id="signUpMessage" class = "messageDiv" style="display:none;"></div>
+
+    <div id="signUpMessage" class="messageDiv" style="display:none;"></div>
+    
     <div class="container">
-        <div class="left-section"> 
-        </div>
+        <div class="left-section"></div>
         <div class="right-section">
             <div class="login-box">
                 <div class="logo">
@@ -32,15 +33,20 @@
                 </div>
                 <h2>Log In</h2>
                 <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
-                <div id="signUpMessage" class = "messageDiv" style="display:none;"></div>
+                <div id="signUpMessage" class="messageDiv" style="display:none;"></div>
+                
                 <!-- Login form -->
                 <form id="loginForm">
-                    <input type="email" id="email" placeholder="email" required>
-                    <input type="password" id="password" placeholder="password" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    
                     <p class="or">OR</p>
                     <div class="social-login">
- 
+                        <!-- Social Media Login Buttons -->
+                        <button class="social-btn"><i class="fa-brands fa-google"></i> Login with Google</button>
+                        <button class="social-btn"><i class="fa-brands fa-facebook"></i> Login with Facebook</button>
                     </div>
+
                     <div class="form-actions">
                         <button type="submit" class="login-btn">Login</button>
                         <a href="forgetPassword.html" class="forgot-password">Forgot Password?</a>
@@ -50,13 +56,14 @@
             </div>
         </div>
     </div>
+
     <footer>
         <div class="container">
             <p>&copy; All rights reserved to प्राचीनप्रवेशक.</p>
             <p><a href="contact.html">Contact Us</a></p>
             <ul>
-                <li><a href="https://www.instagram.com/prachinpraveshak?igsh=MXc2cTVxeXIxcWNmMQ==" target="blank"><i class="fa-brands fa-square-instagram"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/prachinpraveshak-347550327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/prachinpraveshak?igsh=MXc2cTVxeXIxcWNmMQ==" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/prachinpraveshak-347550327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
                 <li><a href="mailto:prachinpraveshak@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
             </ul>
         </div>
@@ -69,7 +76,6 @@
     <script type="module">
       import { loginUser } from './firebase.js';
 
-<<<<<<< HEAD
       const loginForm = document.getElementById('loginForm');
       loginForm.addEventListener('submit', (e) => {
         e.preventDefault();
@@ -90,16 +96,6 @@
           });
       });
     </script>
-=======
-    if (password !== correctPassword) {
-        document.getElementById('error-message').style.display = 'block';
-        return false; // Prevent form submission
-    }
-    return true; // Allow form submission
-}
-</script>-->
 
->>>>>>> d52a2f4c1e0cb64a1c1e7380fab9f21156c9b9cb
 </body>
 </html>
-
