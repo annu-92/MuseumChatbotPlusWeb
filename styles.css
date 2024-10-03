@@ -312,7 +312,7 @@ header {
     flex-direction: column; 
     align-items: center; 
     text-align: center;
-    background-color:#c1886a;
+    background-color:#c68e75;
     padding: 40px;
     width: 139%;
     height: 100%;
@@ -431,7 +431,7 @@ form input {
     flex-direction: column; 
     align-items: center; 
     text-align: center;
-    background-color: #c1886a;
+    background-color: #c68e75;
     padding: 20px;
     width: 139%;
     height: 100%;
@@ -521,7 +521,7 @@ form input {
     flex-direction: column; 
     align-items: center; 
     text-align: center;
-    background-color: #c1886a;
+    background-color: #c68e75;
     padding: 20px;
     width: 139%;
     height: 100%;
@@ -651,7 +651,7 @@ footer ul li a {
     flex-direction: column; 
     align-items: center; 
     text-align: center;
-    background-color: #c1886a;
+    background-color: #c68e75;
     padding: 20px;
     width: 139%;
     height: 100%;
@@ -695,12 +695,10 @@ form input {
 }
 
 .contactus-btn:hover {
-<<<<<<< HEAD
     opacity: 0.8;
-=======
-    opacity: 0.9;
+}
 
-.messageDiv{
+/*.messageDiv{
     background-color: #600432;
     color:white;
     padding :10px 20px;
@@ -710,6 +708,5 @@ form input {
     opacity:0;
     animation:fadeOut 7s forwards;
 
-}
->>>>>>> 9bed13a7a451071587875ed798d81b0621a30588
-}
+}*/
+
