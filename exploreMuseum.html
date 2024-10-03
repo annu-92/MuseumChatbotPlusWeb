@@ -163,7 +163,7 @@
                         </div>
                     </div>
                     </li> 
-                    <li><a href="exploreMuseum.html" id="museumLink">Discover Museums</a></li>
+                    <li><a href="exploreMuseum.html" id="museumLink" >Discover Museums</a></li>
                     <li><a href="events.html" id="eventLink">Events</a></li>
                     <li><a href="aboutus.html" id="aboutLink">About Us</a></li>
                     <li><a href="login.html" id="loginLink">LOGIN</a></li>
@@ -173,78 +173,51 @@
        
     </header>
 
-    
-     <!--Hero Banner Section-->
-     <section id="home">
-        <div class="hero">
-            <video autoplay muted loop>
-                <source src="bgvd.mp4" type="video/mp4">
-            </video>
-            <div class="banner container-fluid">
-                <div class="row d-flex align-items-center">
-                    <div class="col-lg-5 col-md-12">
-                        <div class="content">
-                        <h1>Welcome to प्राचीनप्रवेशक! </h1>
-                        <h2>Explore The History Of India</h2>
-                        <p>"Where history meets innovation. Discover the rich cultural<br>
-                            heritage of India. From ancient sculptures and rare manuscripts<br>
-                            to exquisite paintings and archaeological treasures, the museum<br>
-                            offers a captivating journey through the subcontinent's diverse<br>
-                            artistic and cultural traditions."</p>
-                        </div>
+    <!-- Museum Listings -->
+    <section id="museums">
+        <div class="container">
+            <h2>Discover Museums</h2>
+            <div class="museum-listing">
+
+                <div class="museum-card">
+                    <img src="museum2.jpg">
+                    <h3> National Museum of India</h3>
+                    <p>Location:New Delhi</p>
+                    <p>Explore history and cultural artifacts.</p>
+                    <button class="museum">Explore 360 View</button><br>
+                    <div class="museum-360-view">
+                        <script src="https://static.kuula.io/embed.js" data-kuula="https://kuula.co/share/collection/7ZGwT?logo=1&info=1&fs=1&vr=0&zoom=1&sd=1&thumbs=1" data-width="100%" data-height="640px"></script>
                     </div>
                 </div>
+                
+                <div class="museum-card">
+                    <img src="https://afar.brightspotcdn.com/dims4/default/b84ea12/2147483647/strip/false/crop/1600x800+0+0/resize/1486x743!/quality/90/?url=https%3A%2F%2Fk3-prod-afar-media.s3.us-west-2.amazonaws.com%2Fbrightspot%2F96%2F97%2F9bd0c39e1252c9fe8334cd8e28eb%2Foriginal-6cb07e8ecb947187f0bffa00b167c7ae.jpg" alt="Museum 2">
+                    <h3>Chhatrapati Shivaji Maharaj Vastu Sangrahalaya</h3>
+                    <p>Location: Mumbai, Maharashtra</p>
+                    <p>Discover art, archaeology, and history.</p>
+                </div>
+                <div class="museum-card">
+                    <img src="museum3.jpg">
+                    <h3>Indian Museum</h3>
+                    <p>Location: Kolkata, West Bengal</p>
+                    <p>Explore the archaeologyo of India</p>
+                </div>
+                <div class="museum-card"></divclass>>
+                    <img src="museum4.jpg">
+                    <h3>National Rail Museum</h3>
+                    <p>Location: New Delhi</p>
+                    <p>Enjoy Train Ride on Steam Locomotive</p>
+                </div>
+                <div class="museum-card">
+                    <img src="museum5.jpg">
+                    <h3>Government Museum</h3>
+                    <p>Location: Chennai, Tamil Nadu</p>
+                    <p>Explore the history of Tamil Nadu</p>
+                </div>
+                <!-- Add more museum cards as needed -->
             </div>
         </div>
     </section>
-
     
-<footer>
-    <div class="container">
-        <p>&copy;All rights reserved to प्राचीनप्रवेशक.</p>
-        <p><a href="contact.html">Contact Us</a></p>
-        <ul>
-            <li><a href="https://www.instagram.com/prachinpraveshak?igsh=MXc2cTVxeXIxcWNmMQ==" target="blank"><i class="fa-brands fa-square-instagram"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/prachinpraveshak-347550327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="blank"><i class="fa-brands fa-linkedin"></i></a></li>
-            <li><a href="mailto:prachinpraveshak@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
-        </ul>
-    </div>
-</footer>
-<!--Scripts-->
-<script src="scripts.js"></script>
-
-<script>document.addEventListener('DOMContentLoaded', function() {
-    const aboutLink = document.getElementById('aboutLink');
-    
-    saboutLink.addEventListener('click', function(e) {
-        e.preventDefault(); 
-        window.location.href = 'aboutus.html';
-      
-    });
-});
-</script>
-
-
-<script>document.addEventListener('DOMContentLoaded', function() {
-    const loginLink = document.getElementById('loginLink');
-        
-    loginLink.addEventListener('click', function(e) {
-        e.preventDefault(); 
-        window.location.href = 'login.html';
-        });
-    });
-</script>
-
-
-<script>document.addEventListener('DOMContentLoaded', function() {
-    const museumLink = document.getElementById('museumLink');
-    
-    museumLink.addEventListener('click', function(e) {
-        e.preventDefault(); 
-        window.location.href = 'exploreMuseum.html'; 
-    });
-    });
-</script>
-
 </body>
 </html>

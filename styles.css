@@ -239,6 +239,10 @@ header {
     text-align: center;
     padding: 20px;
 }
+.museum-360-view {
+    margin: 20px 0;
+    text-align: center; /* Center the embed if needed */
+}
 
 .museum-card img {
     width: 100%;
