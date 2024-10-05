@@ -217,12 +217,18 @@ header {
     background-color: #555;
   }
 
-/* -------Museum Listings------- */
+/* -------Discover Museum------- */
+
+
 .museum-listing {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 20px 0;
+    background-color: #c68e75;
+    width: 113%; 
+    height: 100vh; 
+    margin: 0; 
+    padding: 0;
 }
 
 .container h2 {
@@ -232,17 +238,33 @@ header {
 
 .museum-card {
     background-color: #fff;
-    border: 1px solid #ddd;
+    border: 1px solid #c68e75;
     border-radius: 5px;
     width: 300px;
     margin: 10px;
     text-align: center;
     padding: 20px;
 }
-.museum-360-view {
-    margin: 20px 0;
-    text-align: center; /* Center the embed if needed */
+
+.museum{
+    flex: 1;
+    padding: 10px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #daa35f;
+    transition: 0.5;
 }
+
+.museum:hover {
+    opacity: 0.8;
+}
+/*.museum-360-view {
+    margin: 20px 0;
+    text-align: center; 
+}*/
 
 .museum-card img {
     width: 100%;
@@ -270,13 +292,14 @@ header {
     transform: scale(1.1);
 }
 
+
 /*------Login Section-----*/
 
 .container {
     display: flex;
     height: 100%;
-    margin-left: 0;
-    margin-right: 0;
+    /*margin-left: 0;
+    margin-right: 0;*/
 }
 
 .left-section {
@@ -351,6 +374,20 @@ form input {
     color: #666;
 }
 
+.login-btn {
+    background: linear-gradient(to right, #600432, #872fc5);
+    color: white; 
+    border: none; 
+    padding: 10px;
+    border-radius: 5px; 
+    cursor: pointer; 
+    width: 100%;
+}
+
+.login-btn:hover {
+    opacity: 0.8;
+}
+
 .social-login {
     display: flex;
     margin-top: 20px;
@@ -366,29 +403,17 @@ form input {
     font-weight: bold;
 }
 
-.google { 
+.google-btn { 
     background-color: #db4437; 
     color: black; 
 }
 
-.login-btn {
-    background: linear-gradient(to right, #600432, #872fc5);
-    color: white; 
-    border: none; 
-    padding: 10px;
-    border-radius: 5px; 
-    cursor: pointer; 
-    width: 100%;
-}
-
-.login-btn:hover {
-    opacity: 0.8;
-}
-
 .forgot-password {
+    margin-top: 50px;
     color: #214680;
     text-decoration: none;
 }
+
 /*--------Forgot Password------- */
 
 .container {
@@ -477,7 +502,6 @@ form input {
 .password-btn:hover {
     opacity: 0.9;
 }
-
 
 /*-------SignUp page-------- */
 
@@ -590,7 +614,9 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    display: flex;
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
 }
 
 footer ul {
@@ -609,6 +635,19 @@ footer ul li a {
     color: #fff;
     text-decoration: none;
 }
+
+/*.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px; 
+    text-decoration: none;
+    color: #fff; 
+    font-size: 24px; 
+}*/
 /*--------ContactUs Section------*/
 
 .container {
