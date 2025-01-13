@@ -32,16 +32,26 @@
                 </div>
                 <h2>Log In</h2>
                 <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
-                <div class="social-login">
-                    <button class="google"><i class="fab fa-google"></i></button>
-                </div>
-                <p class="or">OR</p>
+                
+                
                 <form id="loginForm" action="index.html" method="post" onsubmit="return validateLogin()">
-                    <input type="email" placeholder="email" required>
-                    <input type="password" id="password" placeholder="password" required>
+                    <div class="wrapper">
+                        <div class="form" id="form1">
+                          <div class="title">Login</div>
+                          <form action="#" class="loginForm">
+                            <div class="profileImage">
+                              <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                            </div>
+                    <input type="password" id="password" placeholder="password">
+                    <p class="or">OR</p>
+                    <div class="social-login">
+                        <button id="google-login-btn" class="google-button">
+                            <i class="fab fa-google"></i>Login with google
+                        </button>
+                    </div>
                     <div class="form-actions">
-                        <a href="forgetPassword.html" class="forgot-password">Forgot Password?</a>
                         <button type="submit" class="login-btn">Login</button>
+                        <a href="forgetPassword.html" class="forgot-password">Forgot Password?</a>
                     </div>
                     <p id="error-message" style="color: red; display: none;">incorrect password</p>
                 </form>
@@ -62,16 +72,16 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="scripts.js"></script>
-    <script>document.addEventListener('DOMContentLoaded', function() {
+    <!--<script>document.addEventListener('DOMContentLoaded', function() {
         const aboutLink = document.getElementById('aboutLink');
         
-        saboutLink.addEventListener('click', function(e) {
+        aboutLink.addEventListener('click', function(e) {
             e.preventDefault(); 
             window.location.href = 'aboutus.html';
           
         });
     });
-    </script>
+    </script>-->
     <!--<script>
 function validateLogin() {
     const password = document.getElementById('password').value;
@@ -84,5 +94,6 @@ function validateLogin() {
     return true; // Allow form submission
 }
 </script>-->
+
 </body>
 </html>

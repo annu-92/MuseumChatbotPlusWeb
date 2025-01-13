@@ -327,6 +327,44 @@ header {
     color: #333;
 }
 
+.wrapper {
+    width: 350px;
+    height: 500px;
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+    .form {
+      border-radius: 10px;
+      overflow: hidden;
+      height: inherit;
+      width: inherit;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: 100;
+      background-color: darkMaroon;
+      transition: all ease 1s;
+      box-shadow: 0px 0px 0.5px 0.5px lighten(yellow,20%);
+      &.form-horizontal {
+        transform: rotate(-90deg);
+        z-index: 99;
+      }
+      .title {
+        font-size: 4rem;
+        text-align: center;
+        color: #320919;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        background-color: yellow;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+        }}
+
 form input {
     width: 100%;
     padding: 10px;
@@ -502,7 +540,7 @@ form input {
 }
 
 .right-section {
-    flex: 0 0 400px;
+    flex: 0 100px 400px;
     justify-content: center;
     height: 90vh;
 }
